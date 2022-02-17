@@ -1,13 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Festive&family=Redressed&display=swap");
+html {
+  font-size: 62.5%;
+}
 body {
+  background: rgb(15, 78, 80);
+  background: linear-gradient(
+    180deg,
+    rgba(15, 78, 80, 1) 20%,
+    rgba(218, 218, 218, 1) 100%
+  );
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+Link {
+  text-decoration: none;
+}
+.anchor {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.pdB-4 {
+  padding-bottom: 4rem;
+}
+.pdL-3 {
+  padding-left: 3rem;
+}
+.pdR-3 {
+  padding-right: 3rem;
+}
+.padT-2 {
+  padding-top: 2rem;
+}
+.mrg-off {
+  margin: 6rem 2rem;
+}
+.mrg-2 {
+  margin: 2rem;
+}
+.container__menu {
+  width: 100%;
+}
+.wd-220 {
+  width: 100%;
+}
+.wd-100 {
+  width: 100%;
+}
+.wd-50 {
+  width: 50rem;
+}
+.wd-sm {
+  width: 8rem;
+}
+.bground-gradient {
+  background: rgb(148, 251, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(148, 251, 255, 1) 26%,
+    rgba(255, 255, 255, 1) 50%
+  );
+}
+@media screen and (min-width: 800px) {
+  .wd-220 {
+    width: 22rem;
+  }
+}
+/* Grid */
+.grid {
+  display: grid;
+  gap: 2rem 1.4rem;
+  border: 2px solid #382c94;
+  width: 100%;
+}
+.grid__features {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 5rem 18rem;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+.grid__features__box {
+  justify-self: flex-end;
+}
+@media screen and (min-width: 800px) {
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Grid End */
+/* Gallery */
+.img__feature {
+  width: 100%;
+}
+.gallery {
+  display: grid;
+  gap: 2rem 1.4rem;
+}
+.gallery__item {
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  text-decoration: none;
+}
+.gallery img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.gallery img:hover {
+  transform: scale(1.3);
+  transition: all 600ms;
+}
+.gallery-sm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.gallery-sm img {
+  margin: 0 1rem;
+  width: 12rem;
+}
+@media screen and (min-width: 800px) {
+  .gallery--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* Gallery End */
+/* Icons */
+.icon {
+  font-size: 2.6rem;
+  color: #382c94;
+}
+/* Icons End */
+/* Text */
+.header-2 {
+  font-family: "Festive", cursive;
+  font-size: 4.8rem;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.header-3 {
+  font-family: "Redressed", cursive;
+  font-size: 3.4rem;
+  font-weight: 600;
+  line-height: 3rem;
+  text-align: justify;
+  color: #f5f7f6;
+}
+.text__info {
+  font-family: "Redressed", cursive;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+  text-align: center;
+  color: #f5f7f6;
+  text-decoration: none;
+}
+.text__feature {
+  font-family: "Redressed", cursive;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  text-align: center;
+  color: #f5f7f6;
+  text-decoration: none;
+  padding: 0 1rem;
+  align-items: center;
+  align-self: center;
+}
+.text__price {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  text-align: center;
+  color: #382c94;
+  text-decoration: none;
+}
+@media screen and (min-width: 800px) {
+  .text__feature {
+    text-align: justify;
+  }
+  .text__price {
+    text-align: justify;
+  }
+}
+/* Text End */
+.wd-test {
+  width: 300px;
 }
