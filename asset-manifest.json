@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/casas/static/css/main.9e5d90d4.css",
+    "main.js": "/casas/static/js/main.c9a5c443.js",
+    "static/js/787.490f966a.chunk.js": "/casas/static/js/787.490f966a.chunk.js",
+    "index.html": "/casas/index.html",
+    "main.9e5d90d4.css.map": "/casas/static/css/main.9e5d90d4.css.map",
+    "main.c9a5c443.js.map": "/casas/static/js/main.c9a5c443.js.map",
+    "787.490f966a.chunk.js.map": "/casas/static/js/787.490f966a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e5d90d4.css",
+    "static/js/main.c9a5c443.js"
+  ]
+}
